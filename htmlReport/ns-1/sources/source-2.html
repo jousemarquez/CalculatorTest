@@ -1,0 +1,442 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > CalculatorTest</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">calculadora</a>
+</div>
+
+<h1>Coverage Summary for Class: CalculatorTest (calculadora)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CalculatorTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (38/38)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (182/182)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package calculadora;
+&nbsp;
+<b class="fc">&nbsp;class CalculatorTest {</b>
+&nbsp;    private static final double DELTA = 1e-15;
+&nbsp;
+&nbsp;    private void assertArrayEquals(double expectedResult, double result, double delta) {
+<b class="fc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    // Add TESTS
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addEquivalence1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Equivalence 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 35.0;</b>
+<b class="fc">&nbsp;        double result = instance.add(10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addEquivalence2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Equivalence 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 15.0;</b>
+<b class="fc">&nbsp;        double result = instance.add(-10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addEquivalence3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Equivalence 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -35.0;</b>
+<b class="fc">&nbsp;        double result = instance.add(-10.0,-25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addLimitsValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Limit Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 1390121.1;</b>
+<b class="fc">&nbsp;        double result = instance.add(717229.82,672891.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addLimitsValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Limit Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -1390121.1;</b>
+<b class="fc">&nbsp;        double result = instance.add(-717229.82,-672891.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addLimitsValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Limit Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 0.0;</b>
+<b class="fc">&nbsp;        double result = instance.add(0.0,0.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addRandomValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Random Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 54.31;</b>
+<b class="fc">&nbsp;        double result = instance.add(43.21,10.10);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addRandomValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Random Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -27.30;</b>
+<b class="fc">&nbsp;        double result = instance.add(50.70,-78.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void addRandomValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Add Random Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 432.90;</b>
+<b class="fc">&nbsp;        double result = instance.add(0.90,432.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Subtract TESTS
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractEquivalence1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Equivalence 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -15.0;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractEquivalence2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Equivalence 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -35.0;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(-10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractEquivalence3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Equivalence 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 15.0;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(-10.0,-25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractLimitsValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Limit Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 44338.54;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(717229.82,672891.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractLimitsValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Limit Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -1390121.1;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(-717229.82,672891.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractLimitsValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Limit Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 0.0;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(0.0,0.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractRandomValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Random Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 33.11;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(43.21,10.10);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractRandomValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Random Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 128.70;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(50.70,-78.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void subtractRandomValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Subtract Random Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -431.1;</b>
+<b class="fc">&nbsp;        double result = instance.subtract(0.90,432.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Multiply TESTS
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyEquivalence1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Equivalence 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 250.0;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyEquivalence2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Equivalence 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -250.0;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(-10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyEquivalence3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Equivalence 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 250.0;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(-10.0,-25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyLimitsValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Limit Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 48255222.2896;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(717229.82,67.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyLimitsValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Limit Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -165113476.862;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(-717229.82,230.21);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyLimitsValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Limit Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 0.0;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(0.0,0.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyRandomValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Random Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 436.421;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(43.21,10.10);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyRandomValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Random Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -3954.6;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(50.70,-78.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void multiplyRandomValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Multiply Random Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 388.8;</b>
+<b class="fc">&nbsp;        double result = instance.multiply(0.90,432.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    // Divide TESTS
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideEquivalence1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Equivalence 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 0.4;</b>
+<b class="fc">&nbsp;        double result = instance.divide(10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideEquivalence2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Equivalence 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -250.0;</b>
+<b class="fc">&nbsp;        double result = instance.divide(-10.0,25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideEquivalence3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Equivalence 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -0.4;</b>
+<b class="fc">&nbsp;        double result = instance.divide(-10.0,-25.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideLimitsValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Limit Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 10660.3718787;</b>
+<b class="fc">&nbsp;        double result = instance.divide(717229.82,67.28);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideLimitsValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Limit Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -3115.54589288;</b>
+<b class="fc">&nbsp;        double result = instance.divide(-717229.82,230.21);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideLimitsValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Limit Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = Double.POSITIVE_INFINITY;</b>
+<b class="fc">&nbsp;        double result = instance.divide(503.0,0.0);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideRandomValues1() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Random Values 1&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 4.27821782178;</b>
+<b class="fc">&nbsp;        double result = instance.divide(43.21,10.10);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideRandomValues2() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Random Values 2&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = -0.65;</b>
+<b class="fc">&nbsp;        double result = instance.divide(50.70,-78.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @org.junit.jupiter.api.Test
+&nbsp;    public void divideRandomValues3() {
+<b class="fc">&nbsp;        System.out.println(&quot;Divide Random Values 3&quot;);</b>
+<b class="fc">&nbsp;        Calculator instance = new Calculator();</b>
+<b class="fc">&nbsp;        double expectedResult = 0.00208333333;</b>
+<b class="fc">&nbsp;        double result = instance.divide(0.90,432.00);</b>
+<b class="fc">&nbsp;        assertArrayEquals(expectedResult,result,DELTA);</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-04-21 18:35</div>
+</div>
+</body>
+</html>
